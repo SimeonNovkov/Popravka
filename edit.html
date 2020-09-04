@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+	<form action="/all/edit/{{rating.id}}" method="POST">
+		Rating:<br>
+		<input type="text" name="edit_rating" placeholder="Edit...">
+		<button type="submit" class="update">Update</button>
+	</form>
+{% endblock %}
